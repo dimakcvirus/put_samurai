@@ -31,5 +31,29 @@ Single Page Application - это маленькая полупустая html с
                                               Урок 06
 JSX - позволяет  писать html  в нутри Js    
 В место CSS  Class нужно писать ClassName и писать стили 
+Const App = () => {       const App = объявляется переменая  которая  обявляет обычную стрелочную функцияю
+  return (                 которая возвращает html разметку
+    <div className="App">
+      <ul>
+          <li>css</li>
+          <li>html</li>
+          <li>js</li>
+          <li>react</li>
+       </ul>
+     </div>
+  );
+}
 
-
+Return  не может возвратить несколько дивов подряд 
+пример :  return (
+<div>оди</div>
+<div>два</div>
+<div>три</div>
+)
+должен быть обязательно родительский элемент
+пример: вот так  вот привильно 
+<div>
+  <div>один</div>
+  <div>два</div>
+  <div>три</div>
+</div>
