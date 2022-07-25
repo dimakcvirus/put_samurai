@@ -194,4 +194,27 @@ function Welcome = () => {
       </div>)
     }
   
+ Компонента - это это функция возвращающая jsx разметку 
+ Как её использовать ?
+ Header(); ?????? не когда не используем на примую 
+ <Header />  мы вызываем её как тэг 
+ 
+ 
+ ПРОПСЫ
+ 
+ <Header name='Dima K' age='30' />
+ 
+ const Header = (props) => {      В просе уже лежит если мы вызовем через консоль лог { name:'Dima k', age:'30'}
+    return (<div>
+      <span> {props.name}, {props.age} </span>
+      <a>it-incubator.bu</a>
+      <a>repetitora.net</a>
+    </div>
+    );
+ }
+ 
+ 
+ 
+ 
+ 
 
