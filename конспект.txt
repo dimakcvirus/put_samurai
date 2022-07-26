@@ -220,7 +220,33 @@ function Welcome = () => {
  
  
  
- 
+                      Урок 19
+                      
+                      
+      роут сработал только когда вот так вот написал  нашел в коментариях под видосом                 
+     
+IAMSHEVCHUK
+5 месяцев назад
+Для меня сработал следующий вариант:
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+
+const App = () => {
+  return(
+        <div className='app-wrapper'>
+          <Header />
+          <Navbar />
+          <div class="app-wrapper-content">
+              <BrowserRouter>
+                  <Routes>
+                    <Route path="/dialogs" element={<Dialogs />}/>
+                    <Route path="/profile" element={<Profile />}/>
+                  </Routes>
+              </BrowserRouter>
+          </div>
+        </div>
+  );
+}
+
  
  
  
