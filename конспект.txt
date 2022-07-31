@@ -247,7 +247,27 @@ const App = () => {
   );
 }
 
- 
+                    Урок 20
+                    
+         что бы списко меню  изменял цвет при его активности  нужно :
+         
+         let activeStyle = {
+    color:"gold"                  объявить переменную с цветом 
+};
+
+и
+
+  <div className={s.item}>
+                    <NavLink  to="/Profile" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Profile</NavLink>
+                </div>
+
+
+                    и в списке создать style с таким кодом 
+                    
+                    
+                    
+                    
+                    
  
  
  
